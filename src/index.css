@@ -1,10 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-
-
-
 
 /*:root {*/
 /*  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;*/
@@ -74,3 +76,123 @@
 /*    background-color: #f9f9f9;*/
 /*  }*/
 /*}*/
+
+.main {
+  background: repeating-linear-gradient(
+      0deg,
+      hsla(103, 11%, 32%, 0.09) 0px,
+      hsla(103, 11%, 32%, 0.09) 1px,
+      transparent 1px,
+      transparent 11px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      hsla(103, 11%, 32%, 0.09) 0px,
+      hsla(103, 11%, 32%, 0.09) 1px,
+      transparent 1px,
+      transparent 11px
+    ),
+    linear-gradient(90deg, hsl(317, 13%, 6%), hsl(317, 13%, 6%));
+}
+
+li {
+  cursor: pointer;
+  position: relative;
+}
+li::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 2px;
+  left: 0;
+  bottom: -4px;
+  /* background-color: linear-gradient(to right, #a46a38, #efdb6a); */
+  background-color: orange;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-in-out;
+  transform: scaleX(0);
+}
+li:hover::before {
+  transform-origin: bottom left;
+  transform: scaleX(1);
+}
+
+.hind-light {
+  font-family: "Hind", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.hind-regular {
+  font-family: "Hind", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.hind-medium {
+  font-family: "Hind", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.hind-semibold {
+  font-family: "Hind", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.hind-bold {
+  font-family: "Hind", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.libre-baskerville-regular {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.libre-baskerville-bold {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.libre-baskerville-regular-italic {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.btnBlack {
+  background-color: black;
+  color: lightgray;
+}
+
+.bgImage {
+  background-color: silver;
+  background-size: cover;
+  background-blend-mode: multiply;
+  background-image: url("./assets/lusiboi-lg.png");
+}
+
+@media (min-width: 768px) {
+  .bgImage {
+    background-image: none;
+  }
+}
+
+.rainbow {
+  font-family: "Lato", sans-serif;
+  background-image: linear-gradient(90deg, #a46a38 0%, #efdb6a 100%);
+  background-clip: text;
+  color: transparent;
+}
+
+/* .rainbow {
+  font-family: "Lato", sans-serif;
+} */
+
+/* font-weight: 400;
+  font-style: normal; */
