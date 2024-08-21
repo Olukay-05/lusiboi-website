@@ -5,17 +5,20 @@ import luciboi from "../assets/lusiboi-lg.png";
 function AboutUs() {
   return (
     <div className="bg-custom-gradient">
-      <section>
-        <h1 className=" text-7xl text-center mt-28 lg:text-zinc-300 lg:text-[15rem]  lg:tracking-[4rem]">
+      <section className=" flex items-center gap-5 flex-col sm:block ">
+        <div className="w-16 mt-24 sm:hidden ">
+          <img src={luciboi} alt="Logo" />
+        </div>
+        <h1 className=" tracking-[0.8rem] text-6xl text-center  sm:mt-28 text-zinc-300 lg:text-[15rem]  lg:tracking-[4rem]">
           LUSIBOI
-          <span className="text-lg block lg:text-[2rem] lg:tracking-[2.5rem]">
+          <span className="text-[1rem] tracking-[0.5rem] text-lg block lg:text-[2rem] lg:tracking-[2.5rem]">
             ENTERTAINMENT
           </span>
         </h1>
       </section>
 
       <section>
-        <div className="lg:flex items-center justify-between  p-10 lg:mt-32 lg:mx-64">
+        <div className="flex flex-col-reverse  md:flex-row items-center justify-between  p-10 lg:mt-32 lg:mx-64">
           <div className="md:flex   md:h-80 md:w-[80rem] ">
             {/* <div className="hidden lg:block">
               <img src={blackImg} alt="image-2" />
@@ -23,7 +26,7 @@ function AboutUs() {
             <div className="md:mt-16 hidden lg:block">
               <img src={whiteImg} alt="image-1" />
             </div> */}
-            <div className="w-52 ">
+            <div className="hidden md:block w-52 ">
               <img src={luciboi} alt="Logo" />
             </div>
           </div>

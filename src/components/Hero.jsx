@@ -5,7 +5,7 @@ import Button from "../reusable-component/Button";
 
 function Hero() {
   return (
-    <div className="bg-stone-200 relative text-stone-800  pt-12 pb-12 sm:flex sm:items-center sm:justify-around lg:px-60 lg:pt-28 lg:pb-[15rem]">
+    <div className="  bg-stone-200 text-center md:text-left relative text-stone-800  pt-20 pb-20 md:pt-12 md:pb-12 sm:flex sm:items-center sm:justify-around lg:px-60 lg:pt-28 lg:pb-[15rem]">
       <div className="flex items-start justify-between  p-4 flex-col gap-6 pb-8 md:px-20 md:text-center xl:gap-12   ">
         <h1 className="font-libre-baskerville lg:text-center xl:text-left font-normal text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl ">
           Your Story, Our Expertise
@@ -16,7 +16,7 @@ function Hero() {
           your partner in turning creativity into impact. Let&apos;s make
           something unforgettable together.
         </p>
-        <div>
+        <div className="mx-auto md:block">
           <Button type="primary_black">Let&apos;s Get Started</Button>
         </div>
       </div>
@@ -25,7 +25,7 @@ function Hero() {
         <img src={luciboi} alt="image" className=" w-full" />
       </div>
 
-      <div className=" hidden sm:block lg:absolute z-1 lg:bottom-[-4rem] lg:left-[0rem] w-[40rem]">
+      <div className="  absolute z-1 bottom--1 w-[12rem] left-0 lg:bottom-[-4rem] lg:left-[0rem] lg:w-[40rem]">
         <img src={film} alt="film" className="" />
       </div>
     </div>

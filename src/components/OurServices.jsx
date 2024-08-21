@@ -15,9 +15,11 @@ import Description from "./Description";
 
 function OurServices() {
   return (
-    <div className="lg:mt-40 ">
-      <h2 className="text-center lg:text-4xl xl:text-5xl">Our Services</h2>
-      <article className="md:flex justify-between mx-40">
+    <div className="mt-20 lg:mt-40 ">
+      <h2 className="text-center text-2xl font-bold lg:text-3xl xl:text-4xl">
+        Our Services
+      </h2>
+      <article className="grid content-center justify-items-center grid-cols-2 md:flex justify-between sm:mx-40">
         <ServicesA />
         <ServicesB />
         <ServicesC />
