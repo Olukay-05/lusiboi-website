@@ -34,9 +34,13 @@ function Button({ children, disabled, type }) {
   const baseBlack =
     "inline-block  rounded-lg bg-black font-semibold uppercase tracking-wide text-stone-200 transition-colors duration-300 hover:bg-yellow-300 focus:bg-yellow-300 focus:outline-none focus:ring focus:ring-yellow-300 focus:ring-offset-2 disabled:cursor-not-allowed";
 
+  const baseWhite =
+    "inline-block text-lg rounded-lg bg-stone-200 font-semibold uppercase tracking-wide text-stone-800 transition-colors duration-300 hover:bg-yellow-300 focus:bg-yellow-300 focus:outline-none focus:ring focus:ring-yellow-300 focus:ring-offset-2 disabled:cursor-not-allowed";
+
   const styles = {
-    primary_gold: baseGold + " px-8 py-4 md:px-10 md:py-4",
+    primary_gold: baseGold + " px-8 py-4 md:px-5 md:py-3",
     primary_black: baseBlack + " text-lg px-8 py-4 md:px-10 md:py-5",
+    primary_white: baseWhite + " px-8 py-4 md:px-5 md:py-3",
 
     small_gold: baseGold + " px-4 py-2 md:px-5 md:py-2.5 text-xs",
     small_black: baseBlack + " px-4 py-3 md:px-5 md:py-2.5 text-xs",
@@ -50,7 +54,7 @@ function Button({ children, disabled, type }) {
 
   useEffect(() => {
     const updateButtonType = () => {
-      if (window.innerWidth >= 768) {
+      if (window.innerWidth > 768) {
         setResponsiveType(type); // Use the passed-in type (e.g., primary_black) for larger screens
       } else {
         // For small screens, adjust the type if it's one of the primary types

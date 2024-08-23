@@ -10,8 +10,17 @@ import ServicesD from "./ServicesD";
 import ServicesE from "./ServicesE";
 
 // import ServicesInformation from "./ServicesInformation";
-import ImageContainer from "./ImageContainer";
-import Description from "./Description";
+import ImageContainerA from "./ImageContainerA";
+import DescriptionA from "./DescriptionA";
+
+import ImageContainerB from "./ImageContainerB";
+import DescriptionB from "./DescriptionB";
+
+import ImageContainerC from "./ImageContainerC";
+import DescriptionC from "./DescriptionC";
+
+import ImageContainerD from "./ImageContainerD";
+import DescriptionD from "./DescriptionD";
 
 function OurServices() {
   return (
@@ -19,7 +28,15 @@ function OurServices() {
       <h2 className="text-center text-2xl font-bold lg:text-3xl xl:text-4xl">
         Our Services
       </h2>
-      <article className="grid content-center justify-items-center grid-cols-2 md:flex justify-between sm:mx-40">
+      {/* <article className="grid content-center justify-items-center grid-cols-2 sm:mx-40">
+        <ServicesA />
+        <ServicesB />
+        <ServicesC />
+        <ServicesD />
+        <ServicesE />
+      </article> */}
+
+      <article className="grid content-center justify-items-center grid-cols-2 gap-6 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-5 sm:mx-12 md:mx-20 lg:mx-40 xl:mx-0 2xl:mx-40">
         <ServicesA />
         <ServicesB />
         <ServicesC />
@@ -27,24 +44,24 @@ function OurServices() {
         <ServicesE />
       </article>
 
-      <article className="flex items-center justify-around lg:mt-60 lg:mx-60">
-        <ImageContainer />
-        <Description />
+      <article className="flex flex-col sm:flex-row sm:items-center sm:justify-around mt-40 lg:mt-30 xl:mt-60 lg:mx-10 xl:mx-10 2xl:mx-72">
+        <ImageContainerA />
+        <DescriptionA />
       </article>
 
-      <article className="flex items-center justify-around lg:mt-10 lg:mx-60">
-        <Description />
-        <ImageContainer />
+      <article className="flex flex-col-reverse mt-40 md:mt-0 sm:flex-row sm:items-center sm:justify-around lg:mt-20 lg:mx-10 xl:mx-10 2xl:mx-72">
+        <DescriptionB />
+        <ImageContainerB />
       </article>
 
-      <article className="flex items-center justify-around lg:mt-10 lg:mx-60">
-        <ImageContainer />
-        <Description />
+      <article className="flex flex-col mt-40 md:mt-0 sm:flex-row sm:items-center sm:justify-around lg:mt-20 lg:mx-10 xl:mx-10 2xl:mx-72 ">
+        <ImageContainerC />
+        <DescriptionC />
       </article>
 
-      <article className="flex items-center justify-around lg:mt-10 lg:mx-60">
-        <Description />
-        <ImageContainer />
+      <article className="flex flex-col-reverse mt-40 md:mt-0 sm:flex-row sm:items-center sm:justify-around lg:mt-20 lg:mx-10 xl:mx-10 2xl:mx-72 ">
+        <DescriptionD />
+        <ImageContainerD />
       </article>
       {/* <ServicesInformation>
         <h1>Details</h1>

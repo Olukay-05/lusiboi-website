@@ -45,7 +45,7 @@ function Nav() {
   }
 
   return (
-    <nav className="flex items-center justify-between py-4  max-w-[1300px] mx-auto px-4 flex-wrap">
+    <nav className=" flex items-center justify-between py-4  max-w-[1600px] mx-auto px-4 flex-wrap ">
       <div>
         <img src={navLogo} alt="logo" className="w-15 md:w-32 lg:38" />
       </div>
