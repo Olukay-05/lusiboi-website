@@ -8,8 +8,6 @@ import { default as Footer } from "./Footer";
 import { default as Header } from "./Header";
 import { default as Main } from "./Main";
 
-import "../index.css";
-
 function AppLayout() {
   return (
     <>
