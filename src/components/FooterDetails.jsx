@@ -1,8 +1,8 @@
 import Button from "../reusable-component/Button";
-import instagram from "../assets/instagram.svg";
-import email from "../assets/email.svg";
-import tiktok from "../assets/tiktok.svg";
-import twitterX from "../assets/twitterX.svg";
+// import instagram from "../assets/instagram.svg";
+// import email from "../assets/email.svg";
+// import tiktok from "../assets/tiktok.svg";
+// import twitterX from "../assets/twitterX.svg";
 import footerLogo from "../assets/footerLogo.svg";
 
 function FooterDetails() {
@@ -18,7 +18,7 @@ function FooterDetails() {
             <p>About</p>
             <p>Our Services</p>
           </div>
-          <div className="flex items-center justify-center gap-3 sm:gap-5">
+          {/* <div className="flex items-center justify-center gap-3 sm:gap-5">
             <div className="w-4 h-4 sm:w-8 sm:h-8">
               <img src={instagram} alt="instagram" className="w-full" />
             </div>
@@ -31,7 +31,7 @@ function FooterDetails() {
             <div className="w-4 h-4 sm:w-8 sm:h-8">
               <img src={twitterX} alt="twitterX" className="w-full" />
             </div>
-          </div>
+          </div> */}
         </div>
         <div className="hidden lg:block sm:pb-10">
           <Button type="primary_white">Contact Us</Button>
