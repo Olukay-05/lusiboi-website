@@ -1,11 +1,11 @@
-import whiteImg from "../assets/maskWhite.svg";
-import blackImg from "../assets/maskBlack.svg";
+// import whiteImg from "../assets/maskWhite.svg";
+// import blackImg from "../assets/maskBlack.svg";
 import luciboi from "../assets/lusiboi-lg.png";
 
 function AboutUs() {
   return (
-    <div className="bg-custom-gradient">
-      <section className=" flex items-center gap-5 flex-col lg:block ">
+    <section id="about" className="bg-custom-gradient z-20">
+      <section className=" flex items-center gap-5 flex-col lg:block transition-opacity duration-3000 opacity-0 ease-in-out">
         <div className="w-16 mt-24 lg:hidden ">
           <img src={luciboi} alt="Logo" />
         </div>
@@ -16,7 +16,7 @@ function AboutUs() {
           </span>
         </h1> */}
 
-        <h1 className="tracking-[0.3rem] text-4xl text-center text-zinc-300 sm:text-5xl sm:tracking-[0.5rem] md:text-6xl md:tracking-[0.6rem] lg:text-[10rem] lg:tracking-[2.5rem] xl:text-[12rem] xl:tracking-[4rem] sm:mt-18 lg:mt-32">
+        <h1 className="tracking-[0.3rem] text-4xl text-center text-zinc-300 sm:text-5xl sm:tracking-[0.5rem] md:text-6xl md:tracking-[0.6rem] lg:text-[10rem] lg:tracking-[2.5rem] xl:text-[12rem] xl:tracking-[4rem] sm:mt-18 lg:mt-32 lg:pt-[4rem]">
           LUSIBOI
           <span className="block text-lg tracking-[0.3rem] sm:text-xl sm:tracking-[0.4rem] md:text-2xl md:tracking-[0.5rem] lg:text-[1.5rem] lg:tracking-[1.5rem] xl:text-[2rem] xl:tracking-[2rem]">
             ENTERTAINMENT
@@ -24,7 +24,7 @@ function AboutUs() {
         </h1>
       </section>
 
-      <section>
+      <section className="transition-opacity duration-3000 opacity-0 ease-in-out">
         <div className="flex flex-col-reverse md:flex-row items-center justify-between p-10 lg:mt-32 2xl:mx-64">
           <div className="lg:flex lg:h-80 lg:w-[80rem] ">
             {/* <div className="hidden lg:block">
@@ -50,7 +50,7 @@ function AboutUs() {
           </div>
         </div>
       </section>
-    </div>
+    </section>
   );
 }
 

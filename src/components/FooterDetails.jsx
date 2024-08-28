@@ -14,9 +14,15 @@ function FooterDetails() {
             <img src={footerLogo} alt="footer logo" />
           </div>
           <div className="flex items-center justify-center gap-4 sm:gap-10">
-            <p>Home </p>
-            <p>About</p>
-            <p>Our Services</p>
+            <p className="transform hover:scale-125 hover:bg-opacity-50 transition ease-out duration-300">
+              <a href="home">Home</a>
+            </p>
+            <p className="transform hover:scale-125 hover:bg-opacity-50 transition ease-out duration-300">
+              <a href="about">About</a>
+            </p>
+            <p className="transform hover:scale-125 hover:bg-opacity-50 transition ease-out duration-300">
+              <a href="services">Our Services</a>
+            </p>
           </div>
           {/* <div className="flex items-center justify-center gap-3 sm:gap-5">
             <div className="w-4 h-4 sm:w-8 sm:h-8">

@@ -2,17 +2,19 @@ import Button from "../reusable-component/Button";
 
 function DescriptionD() {
   return (
-    <article className="text-stone-200 flex items-center md:items-start py-20 md:py-40 xl:py-10 flex-col gap-5 md:gap-10">
-      <h3 className="rainbow text-center lg:px-20 text-xl 2xl:px-0 font-bold lg:text-4xl xl:px-10">
-        Movie Production
+    <article className="text-stone-200 flex items-center md:items-start py-20 md:py-40 lg:pr-[2rem] xl:py-10 flex-col gap-5 md:gap-10">
+      <h3 className="rainbow text-center lg:px-20 text-xl md:px-[1.5rem] 2xl:px-0 font-bold lg:text-4xl xl:px-10">
+        Event Management
       </h3>
-      <p className="text-stone-200 lg:text-clamp px-[3rem] text-center md:text-left lg:px-20 xl:px-10 2xl:px-0 lg:text-xl">
-        From script development to post-production, we handle all aspects of
-        filmmaking. Our team of experienced professionals ensures that every
-        film we produce is of the highest quality.
+      <p className="text-stone-200 lg:text-clamp px-[3rem] md:px-[1.5rem] text-center md:text-left lg:px-20 xl:px-10 2xl:px-0 lg:text-xl">
+        We organize concerts, talent hunts, film premieres, and other events to
+        showcase our talent and productions. Our events provide a platform for
+        artists to connect with fans and industry professionals.
       </p>
-      <div className="lg:px-20 xl:px-10 2xl:px-0">
-        <Button type="primary_gold">BOOK NOW</Button>
+      <div className="lg:px-20 xl:px-10 2xl:px-0 md:px-[1.5rem]">
+        <a href="#contact">
+          <Button type="primary_gold">BOOK NOW</Button>
+        </a>
       </div>
     </article>
   );
