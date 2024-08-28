@@ -1,3 +1,5 @@
+import { useEffect } from "react";
+
 import { default as AboutUs } from "../components/AboutUs";
 import { default as ContactUs } from "../components/ContactUs";
 import { default as FooterDetails } from "../components/FooterDetails";
@@ -9,6 +11,35 @@ import { default as Header } from "./Header";
 import { default as Main } from "./Main";
 
 function AppLayout() {
+  useEffect(() => {
+    const sections = document.querySelectorAll("section");
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("opacity-100");
+            entry.target.classList.remove("opacity-0");
+          } else {
+            // Reset the opacity when section leaves the viewport
+            entry.target.classList.add("opacity-0");
+            entry.target.classList.remove("opacity-100");
+          }
+        });
+      },
+      {
+        threshold: 0.1, // Trigger when 10% of the section is visible
+      }
+    );
+
+    sections.forEach((section) => observer.observe(section));
+
+    // Cleanup
+    return () => {
+      sections.forEach((section) => observer.unobserve(section));
+    };
+  }, []); // Keep the dependency array empty
+
   return (
     <>
       <Header>
