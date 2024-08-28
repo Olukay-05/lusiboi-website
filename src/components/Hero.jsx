@@ -6,7 +6,7 @@ import film from "../assets/film.svg";
 import { gsap } from "gsap";
 
 import Button from "../reusable-component/Button";
-import ParticlesComponent from "./ParticlesComponent";
+// import ParticlesComponent from "./ParticlesComponent";
 
 function Hero() {
   const h1Ref = useRef(null);

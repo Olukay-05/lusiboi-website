@@ -22,13 +22,15 @@ import DescriptionC from "./DescriptionC";
 import ImageContainerD from "./ImageContainerD";
 import DescriptionD from "./DescriptionD";
 
+import { Fade } from "react-reveal";
+
 function OurServices() {
   return (
     <section
       id="services"
-      className="mt-20 lg:mt-40 transition-opacity duration-1000 opacity-0 lg:pt-[5rem] "
+      className="mt-20 lg:mt-10 transition-opacity duration-1000 opacity-0 lg:pt-[5rem] "
     >
-      <h2 className="text-center text-2xl font-bold lg:text-3xl xl:text-4xl">
+      <h2 className="text-center mt-[10rem] text-2xl font-bold lg:text-3xl xl:text-4xl">
         Our Services
       </h2>
 
@@ -39,26 +41,27 @@ function OurServices() {
         <ServicesD />
         <ServicesE />
       </article>
+      <Fade top distance="20%" duration={1500}>
+        <article className="flex flex-col sm:flex-row sm:items-center sm:justify-around mt-40 lg:mt-30 xl:mt-60 lg:mx-20 xl:mx-32 2xl:mx-44">
+          <ImageContainerA />
+          <DescriptionA />
+        </article>
 
-      <article className="flex flex-col sm:flex-row sm:items-center sm:justify-around mt-40 lg:mt-30 xl:mt-60 lg:mx-20 xl:mx-32 2xl:mx-44">
-        <ImageContainerA />
-        <DescriptionA />
-      </article>
+        <article className="flex flex-col-reverse mt-40 md:mt-0 sm:flex-row sm:items-center sm:justify-around lg:mt-20 lg:mx-20 xl:mx-32 2xl:mx-44">
+          <DescriptionB />
+          <ImageContainerB />
+        </article>
 
-      <article className="flex flex-col-reverse mt-40 md:mt-0 sm:flex-row sm:items-center sm:justify-around lg:mt-20 lg:mx-20 xl:mx-32 2xl:mx-44">
-        <DescriptionB />
-        <ImageContainerB />
-      </article>
+        <article className="flex flex-col mt-40 md:mt-0 sm:flex-row sm:items-center sm:justify-around lg:mt-20 lg:mx-20 xl:mx-32 2xl:mx-44">
+          <ImageContainerC />
+          <DescriptionC />
+        </article>
 
-      <article className="flex flex-col mt-40 md:mt-0 sm:flex-row sm:items-center sm:justify-around lg:mt-20 lg:mx-20 xl:mx-32 2xl:mx-44">
-        <ImageContainerC />
-        <DescriptionC />
-      </article>
-
-      <article className="flex flex-col-reverse mt-40 md:mt-0 sm:flex-row sm:items-center sm:justify-around lg:mt-20 lg:mx-20 xl:mx-32 2xl:mx-44">
-        <DescriptionD />
-        <ImageContainerD />
-      </article>
+        <article className="flex flex-col-reverse mt-40 md:mt-0 sm:flex-row sm:items-center sm:justify-around lg:mt-20 lg:mb-[6rem] lg:mx-20 xl:mx-32 2xl:mx-44">
+          <DescriptionD />
+          <ImageContainerD />
+        </article>
+      </Fade>
       {/* <ServicesInformation>
         <h1>Details</h1>
         <ImageContainer />
